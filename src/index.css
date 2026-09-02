@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FFFDF5;
+    color: #1E293B;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .dark body {
+    background-color: #0B0F19;
+    color: #F8FAFC;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Guaranteed Core Light Tokens */
+.bg-cream { background-color: #FFFDF5 !important; }
+.bg-dark { background-color: #1E293B !important; }
+.text-dark { color: #1E293B !important; }
+.border-dark { border-color: #1E293B !important; }
+
+.bg-accent { background-color: #8B5CF6 !important; }
+.bg-accent-hover:hover { background-color: #7C3AED !important; }
+.bg-accent-light { background-color: #F3E8FF !important; }
+.text-accent { color: #8B5CF6 !important; }
+.border-accent { border-color: #8B5CF6 !important; }
+
+.bg-secondary { background-color: #F472B6 !important; }
+.bg-secondary-hover:hover { background-color: #EC4899 !important; }
+.bg-secondary-light { background-color: #FCE7F3 !important; }
+.text-secondary { color: #F472B6 !important; }
+.border-secondary { border-color: #F472B6 !important; }
+
+.bg-tertiary { background-color: #FBBF24 !important; }
+.bg-tertiary-hover:hover { background-color: #F59E0B !important; }
+.bg-tertiary-light { background-color: #FEF3C7 !important; }
+.text-tertiary { color: #FBBF24 !important; }
+.border-tertiary { border-color: #FBBF24 !important; }
+
+.bg-quaternary { background-color: #34D399 !important; }
+.bg-quaternary-hover:hover { background-color: #10B981 !important; }
+.bg-quaternary-light { background-color: #D1FAE5 !important; }
+.text-quaternary { color: #34D399 !important; }
+.border-quaternary { border-color: #34D399 !important; }
+
+/* Hard Pop Shadows - Light Mode */
+.shadow-pop { box-shadow: 4px 4px 0px 0px #1E293B !important; }
+.shadow-pop-hover:hover { box-shadow: 6px 6px 0px 0px #1E293B !important; }
+.shadow-pop-active { box-shadow: 2px 2px 0px 0px #1E293B !important; }
+.shadow-pop-lg { box-shadow: 8px 8px 0px 0px #1E293B !important; }
+.shadow-pop-pink { box-shadow: 4px 4px 0px 0px #F472B6 !important; }
+.shadow-pop-amber { box-shadow: 4px 4px 0px 0px #FBBF24 !important; }
+.shadow-pop-mint { box-shadow: 4px 4px 0px 0px #34D399 !important; }
+.shadow-pop-violet { box-shadow: 4px 4px 0px 0px #8B5CF6 !important; }
+
+/* Polka Dot Grid Background - Light Mode */
+.dot-grid-bg {
+  background-color: #FFFDF5;
+  background-image: radial-gradient(#CBD5E1 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* =========================================================
+   🌙 NIGHT & DARK THEME OVERRIDES (Memphis Cyber-Pop)
+   ========================================================= */
+.dark .dot-grid-bg {
+  background-color: #0B0F19 !important;
+  background-image: radial-gradient(#1E293B 1.5px, transparent 1.5px) !important;
+  color: #F8FAFC !important;
+}
+
+.dark .bg-white {
+  background-color: #161F30 !important;
+  color: #F8FAFC !important;
+}
+
+.dark .bg-cream {
+  background-color: #0F172A !important;
+  color: #F8FAFC !important;
+}
+
+.dark .text-dark {
+  color: #F8FAFC !important;
+}
+
+.dark .text-dark\/40,
+.dark .text-dark\/50,
+.dark .text-dark\/60 {
+  color: #94A3B8 !important;
+}
+
+.dark .text-dark\/70,
+.dark .text-dark\/80 {
+  color: #CBD5E1 !important;
+}
+
+.dark .border-dark {
+  border-color: #334155 !important;
+}
+
+.dark .border-dark\/10,
+.dark .border-dark\/20,
+.dark .border-dark\/30 {
+  border-color: #1E293B !important;
+}
+
+.dark .shadow-pop {
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+}
+
+.dark .shadow-pop-hover:hover {
+  box-shadow: 6px 6px 0px 0px #000000 !important;
+}
+
+.dark .shadow-pop-active {
+  box-shadow: 2px 2px 0px 0px #000000 !important;
+}
+
+.dark .shadow-pop-lg {
+  box-shadow: 8px 8px 0px 0px #000000 !important;
+}
+
+.dark .bg-muted {
+  background-color: #1E293B !important;
+  color: #F8FAFC !important;
+}
+
+.dark input,
+.dark textarea {
+  background-color: #0F172A !important;
+  color: #F8FAFC !important;
+  border-color: #334155 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748B !important;
+}
+
+.dark header {
+  background-color: rgba(22, 31, 48, 0.95) !important;
+  border-bottom-color: #334155 !important;
+}
+
+.dark .bg-accent-light {
+  background-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+.dark .bg-secondary-light {
+  background-color: rgba(244, 114, 182, 0.2) !important;
+}
+
+.dark .bg-tertiary-light {
+  background-color: rgba(251, 191, 36, 0.2) !important;
+}
+
+.dark .bg-quaternary-light {
+  background-color: rgba(52, 211, 153, 0.2) !important;
+}
+
+/* 3D Card Flip Perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Tactile Pop Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border: 2px solid #1E293B;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
+
+/* Print optimizations for PrintModal */
+@media print {
+  header,
+  nav,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .bg-dot-grid,
+  .dark .bg-dot-grid {
+    background-image: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
