@@ -252,7 +252,7 @@ export const App: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `quizlet_backup_${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `flashpop_backup_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   };

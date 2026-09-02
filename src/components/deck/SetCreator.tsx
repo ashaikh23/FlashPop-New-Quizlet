@@ -346,7 +346,7 @@ export const SetCreator: React.FC<SetCreatorProps> = ({
       >
         <div className="space-y-4">
           <p className="text-xs font-medium text-dark/70">
-            Paste terms and definitions from Quizlet, Google Sheets, Excel, or Word.
+            Paste terms and definitions from Google Sheets, Excel, spreadsheets, or notes.
             Separate terms and definitions with a <strong>Tab</strong>, <strong>hyphen ( - )</strong>, or <strong>comma</strong>.
           </p>
 
